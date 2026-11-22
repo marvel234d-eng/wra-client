@@ -1,0 +1,24 @@
+WRA CLIENT - FORGE 1.20.1 - JAR OTOMATIK DERLEME
+
+Bu klasor 20 modullu Forge modunun kaynak kodunu ve GitHub Actions derleme tanimini icerir.
+Burada test edilmis JAR yoktur. GitHub Actions, resmi ForgeGradle/Minecraft bagimliliklarini
+indirip derleme yapar ve BASARILI OLURSA gercek JAR dosyasini olusturur.
+
+C diskinde bos yer olmadigi icin GitHub uzerinden derleme:
+1. ZIP'i ac; icindeki dosya ve klasorleri cikart.
+2. GitHub'da yeni, bos bir depo olustur. README/gitignore/license ekleme.
+3. "uploading an existing file" diyerek bu projenin icindeki dosyalari yukle.
+   Ozellikle .github/workflows/build-forge-jar.yml dosyasinin depoya eklendiginden emin ol.
+4. Changes'leri kaydet/commit et.
+5. GitHub > depon > Actions > "Build WRA Client 1.20.1 Forge JAR" > Run workflow.
+   (main veya master dalini sec).
+6. Yesil tik gelirse islemin altindaki Artifacts bolumunden
+   "WRA-Client-Forge-1.20.1-1.0.0" adli indirilebilir dosyayi al.
+7. Indirilen ARTIFACT ZIP'ini ac. Icindeki .jar dosyasini
+   Minecraft Forge 1.20.1 mods klasorune koy.
+
+Alternatif: Windows'ta JDK 17 ve Gradle 8.8 ile bu klasorde "gradle build" komutunu kullan.
+Bu islem ilk seferinde yuksek miktarda disk alani ve internet gerektirir.
+
+NOT: Herhangi bir derleme hatasi varsa GitHub Actions logunu incele.
+Basarili derlenmesi, Minecraft oyununda test edildigi anlamina gelmez.

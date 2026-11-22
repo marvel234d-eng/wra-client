@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="wraclient"
+version="${version}"
+displayName="WRA Client"
+authors="WRA"
+description='''WRA Client for Minecraft Forge 1.20.1 — click GUI and 20 functional client utilities.'''
+[[dependencies.wraclient]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.wraclient]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"
